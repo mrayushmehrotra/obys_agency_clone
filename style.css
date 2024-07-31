@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Plain Light";
+  font-family: "plain light";
   src: url("./plain-light-webfont.ttf");
 }
 
@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Plain Light";
+  font-family: "plain light";
   color: white;
 }
 
@@ -68,13 +68,49 @@ body {
 }
 
 .line h2 {
-  font-size: 6.5vw;
+  font-size: 5vw;
   text-transform: uppercase;
+  animation-name: anime;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+  0% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px solid white;
+    color: #fff;
+    opacity: 1;
+    font-weight: 500;
+  }
+  47% {
+    font-family: "plain light";
+    opacity: 0;
+    font-weight: 500;
+
+    -webkit-text-stroke: 1px solid white;
+    color: #fff;
+  }
+  50% {
+    -webkit-text-stroke: 1px solid white;
+    font-weight: 500;
+    opacity: 1;
+    font-family: "silk serif";
+    color: transparent;
+  }
+  100% {
+    -webkit-text-stroke: 1px solid white;
+    font-weight: 500;
+    opacity: 0;
+    font-family: "silk serif";
+    color: transparent;
+  }
 }
 
 #main {
   position: relative;
-  background-color: #111;
+  background-color: #030303;
 }
 
 #page1 {
