@@ -8,6 +8,15 @@
   src: url("./silkserif-lightitalic-webfont.ttf");
 }
 
+@font-face {
+  font-family: "silk regular";
+  src: url("./silkserif-regularitalic-webfont.ttf");
+}
+@font-face {
+  font-family: "plain regular";
+  src: url("./plain-regular-webfont.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
